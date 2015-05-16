@@ -1,0 +1,35 @@
+.text-center{
+	text-align:center;
+}
+.text-left{
+	text-align: left;
+}
+
+@mixin transiton($property, $duration, $timing, $delay) {
+  -moz-transition: $property $duration $timing $delay;
+  -webkit-transition: $property $duration $timing $delay;
+  transition: $property $duration $timing $delay;
+} 
+
+.text-white{
+	color:#fff;
+}
+.text-gray{
+	color: #9E9D9D;
+}
+.text-yellow{
+	color:#fcf07e;
+}
+.text-bold{
+	font-weight:bold;
+}
+.pd-0{
+	padding: 0;
+}
+.mg-0{
+	margin: 0;
+}
+::selection{
+	background-color: black;
+	color: white;
+}

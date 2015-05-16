@@ -1,0 +1,49 @@
+
+section.portafolio{
+	position: relative;
+	top: 150px;
+}
+div.box-texto{
+	width: 70%;
+	background-color: #ff7376;
+	margin: 0 auto;
+	text-align: center;
+	padding: 4% 10%;
+	color: white;
+	h2{
+		margin: 2%;
+	}
+	p{
+		margin: 0;
+	}
+	hr{
+		width: 15%;
+		margin: 0;
+		display: inline-block;
+	}
+	.description{
+		padding: 3% 0 5%;
+	}
+}
+.row-mockup{
+	padding: 0 5%;
+	div.mockup{
+		margin: 0 auto;
+		float: left;
+		position: relative;
+		img{
+			width: 100%;
+		}
+	}
+}
+.anonimo{
+	.izquierda{
+		height: 70px;
+		background-color: black;
+		color: white;
+	}
+}
+footer.lala{
+	position: relative;
+	top: 150px;
+}
