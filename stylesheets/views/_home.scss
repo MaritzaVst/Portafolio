@@ -34,9 +34,10 @@ body{
 	position: absolute;
 	z-index: 2;
 	@include transition (all 1s ease-in-out);
-	.content-menu {
+	.conteiner-menu {
 		position: relative;
-		padding: 0 4%;
+		padding: 10px 4%;
+		height: 90px; 
 		.logo{
 		font-family: "OpenSans-Regular";
 		font-size: 1.5em;
@@ -65,7 +66,7 @@ body{
 		  	height: 23px;
 		  	position: absolute;
 		  	right: 5%;
-  			top: 85%;
+  			top: 65%;
 		  	margin: -15px 0px 0px -15px;
 		 	cursor: pointer;
 		}
@@ -120,7 +121,7 @@ body{
 	background-color:white;
 	box-shadow: 0px 5px 7px 0px rgba(137,137,137, 0.3);
 	z-index: 102;
-	.content-menu{
+	.conteiner-menu{
 		.logo{
 			color: black;
 			top: 40%;
@@ -130,7 +131,7 @@ body{
 		}
 	}
 	.switch{
-		top: 70%;
+		top: 55%;
 	}
 	.switch:before, .switch:after, .switch .menu-toggle{
 		background: #111111;
@@ -244,7 +245,7 @@ body{
 	.img-computer{
 		margin-top: -70px;
 		img{
-			width: 95%;
+			width: 530px;
 		}
 	}
 }

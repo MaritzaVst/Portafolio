@@ -5658,10 +5658,11 @@ body {
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
-  #scroll .content-menu {
+  #scroll .conteiner-menu {
     position: relative;
-    padding: 0 4%; }
-    #scroll .content-menu .logo {
+    padding: 10px 4%;
+    height: 90px; }
+    #scroll .conteiner-menu .logo {
       font-family: "OpenSans-Regular";
       font-size: 1.5em;
       float: left;
@@ -5669,31 +5670,31 @@ body {
       color: transparent;
       position: absolute;
       top: 50%; }
-    #scroll .content-menu .photo {
+    #scroll .conteiner-menu .photo {
       float: left;
       top: 15px;
       position: relative;
       margin-right: 15px; }
-      #scroll .content-menu .photo figure {
+      #scroll .conteiner-menu .photo figure {
         width: 55px;
         height: 55px;
         border-radius: 100px;
         background-image: url(../img/photo.jpg);
         background-position: center;
         background-size: cover; }
-    #scroll .content-menu .switch {
+    #scroll .conteiner-menu .switch {
       width: 30px;
       height: 23px;
       position: absolute;
       right: 5%;
-      top: 85%;
+      top: 65%;
       margin: -15px 0px 0px -15px;
       cursor: pointer; }
-    #scroll .content-menu .switch.on:after {
+    #scroll .conteiner-menu .switch.on:after {
       transform: rotate(-45deg) translate(7px, -8px); }
-    #scroll .content-menu .switch.on:before {
+    #scroll .conteiner-menu .switch.on:before {
       transform: rotate(45deg) translate(5px, 5px); }
-    #scroll .content-menu .switch .menu-toggle {
+    #scroll .conteiner-menu .switch .menu-toggle {
       width: 100%;
       height: 5px;
       background: #fff;
@@ -5702,9 +5703,9 @@ body {
       -o-transition: all 0.3s;
       transition: all 0.3s;
       backface-visibility: hidden; }
-    #scroll .content-menu .switch.on .menu-toggle {
+    #scroll .conteiner-menu .switch.on .menu-toggle {
       opacity: 0; }
-    #scroll .content-menu .switch:before, #scroll .content-menu .switch:after {
+    #scroll .conteiner-menu .switch:before, #scroll .conteiner-menu .switch:after {
       content: "";
       display: block;
       height: 5px;
@@ -5713,18 +5714,18 @@ body {
       -o-transition: all 0.3s;
       transition: all 0.3s;
       backface-visibility: hidden; }
-    #scroll .content-menu nav.menu {
+    #scroll .conteiner-menu nav.menu {
       float: right;
       min-width: 30%;
       position: relative;
       top: 35px;
       visibility: hidden; }
-      #scroll .content-menu nav.menu a {
+      #scroll .conteiner-menu nav.menu a {
         text-decoration: none;
         padding: 4% 4% 2%;
         color: white;
         position: relative; }
-        #scroll .content-menu nav.menu a:hover .line {
+        #scroll .conteiner-menu nav.menu a:hover .line {
           background: black; }
 
 #scroll.active {
@@ -5733,13 +5734,13 @@ body {
   background-color: white;
   box-shadow: 0px 5px 7px 0px rgba(137, 137, 137, 0.3);
   z-index: 102; }
-  #scroll.active .content-menu .logo {
+  #scroll.active .conteiner-menu .logo {
     color: black;
     top: 40%; }
-  #scroll.active .content-menu .photo {
+  #scroll.active .conteiner-menu .photo {
     top: 7.5px; }
   #scroll.active .switch {
-    top: 70%; }
+    top: 55%; }
   #scroll.active .switch:before, #scroll.active .switch:after, #scroll.active .switch .menu-toggle {
     background: #111111; }
   #scroll.active nav.menu a {
@@ -5836,7 +5837,7 @@ body {
   #habilidades .img-computer {
     margin-top: -70px; }
     #habilidades .img-computer img {
-      width: 95%; }
+      width: 530px; }
 
 #portafolio {
   padding: 10% 8% 15%;
