@@ -5643,6 +5643,139 @@ html, body {
 body {
   font-size: 14px; }
 
+/*UTILITIES*/
+.fz-8 {
+  font-size: 8px !important;
+  font-size: rem(8px) !important; }
+
+.fz-9 {
+  font-size: 9px !important;
+  font-size: rem(9px) !important; }
+
+.fz-10 {
+  font-size: 10px !important;
+  font-size: rem(10px) !important; }
+
+.fz-11 {
+  font-size: 11px !important;
+  font-size: rem(11px) !important; }
+
+.fz-12 {
+  font-size: 12px !important;
+  font-size: rem(12px) !important; }
+
+.fz-13 {
+  font-size: 13px !important;
+  font-size: rem(13px) !important; }
+
+.fz-14 {
+  font-size: 14px !important;
+  font-size: rem(14px) !important; }
+
+.fz-15 {
+  font-size: 15px !important;
+  font-size: rem(15px) !important; }
+
+.fz-16 {
+  font-size: 16px !important;
+  font-size: rem(16px) !important; }
+
+.fz-17 {
+  font-size: 17px !important;
+  font-size: rem(17px) !important; }
+
+.fz-18 {
+  font-size: 18px !important;
+  font-size: rem(18px) !important; }
+
+.fz-19 {
+  font-size: 19px !important;
+  font-size: rem(19px) !important; }
+
+.fz-20 {
+  font-size: 20px !important;
+  font-size: rem(20px) !important; }
+
+.fz-21 {
+  font-size: 21px !important;
+  font-size: rem(21px) !important; }
+
+.fz-22 {
+  font-size: 22px !important;
+  font-size: rem(22px) !important; }
+
+.fz-23 {
+  font-size: 23px !important;
+  font-size: rem(23px) !important; }
+
+.fz-24 {
+  font-size: 24px !important;
+  font-size: rem(24px) !important; }
+
+.fz-25 {
+  font-size: 25px !important;
+  font-size: rem(25px) !important; }
+
+.fz-26 {
+  font-size: 26px !important;
+  font-size: rem(26px) !important; }
+
+.fz-27 {
+  font-size: 27px !important;
+  font-size: rem(27px) !important; }
+
+.fz-28 {
+  font-size: 28px !important;
+  font-size: rem(28px) !important; }
+
+.fz-29 {
+  font-size: 29px !important;
+  font-size: rem(29px) !important; }
+
+.fz-30 {
+  font-size: 30px !important;
+  font-size: rem(30px) !important; }
+
+.fz-31 {
+  font-size: 31px !important;
+  font-size: rem(31px) !important; }
+
+.fz-32 {
+  font-size: 32px !important;
+  font-size: rem(32px) !important; }
+
+.fz-33 {
+  font-size: 33px !important;
+  font-size: rem(33px) !important; }
+
+.fz-34 {
+  font-size: 34px !important;
+  font-size: rem(34px) !important; }
+
+.fz-35 {
+  font-size: 35px !important;
+  font-size: rem(35px) !important; }
+
+.fz-36 {
+  font-size: 36px !important;
+  font-size: rem(36px) !important; }
+
+.fz-37 {
+  font-size: 37px !important;
+  font-size: rem(37px) !important; }
+
+.fz-38 {
+  font-size: 38px !important;
+  font-size: rem(38px) !important; }
+
+.fz-39 {
+  font-size: 39px !important;
+  font-size: rem(39px) !important; }
+
+.fz-40 {
+  font-size: 40px !important;
+  font-size: rem(40px) !important; }
+
 .container {
   margin: 0;
   padding: 0;
@@ -5830,6 +5963,9 @@ body {
   background-position: center; }
   #habilidades .texto {
     padding: 5% 10%; }
+    #habilidades .texto h3 {
+      font-weight: 600;
+      letter-spacing: 2.5px; }
     #habilidades .texto p {
       line-height: 1.8;
       letter-spacing: 0.5px;
@@ -5857,7 +5993,8 @@ body {
       #portafolio .grid .row li.col-md-6 {
         padding: 2%; }
         #portafolio .grid .row li.col-md-6 .imagen {
-          position: relative; }
+          position: relative;
+          cursor: pointer; }
           #portafolio .grid .row li.col-md-6 .imagen img {
             width: 100%;
             box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.2); }
@@ -5866,11 +6003,16 @@ body {
             height: 100%;
             top: 0;
             left: 0;
-            background-color: transparent;
             position: absolute;
-            transition: all 0.27s cubic-bezier(0, 0, 0.58, 1); }
-          #portafolio .grid .row li.col-md-6 .imagen .overlay.active {
-            background-color: rgba(238, 238, 238, 0.97); }
+            -webkit-transition: all 0.27s ease-in-out;
+            -o-transition: all 0.27s ease-in-out;
+            transition: all 0.27s ease-in-out; }
+          #portafolio .grid .row li.col-md-6 .imagen .overlay:hover {
+            background-color: black;
+            opacity: 0.9;
+            -webkit-transition: all 0.27s ease-in-out;
+            -o-transition: all 0.27s ease-in-out;
+            transition: all 0.27s ease-in-out; }
 
 #contacto {
   width: 100%;

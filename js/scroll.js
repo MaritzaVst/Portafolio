@@ -25,7 +25,7 @@ $(document).on('click', 'a.smooth', function(e) {
     }, 1000);
 });
 
-$('.imagen').hover(function(){
-    $(".overlay").toggleClass('hidden');
-    $(".overlay").toggleClass("active");
-});
+// $('.imagen').hover(function(){
+//     $(this).find(".overlay").addClass('active');
+//     $(this).find(".overlay").toggleClass("active");
+// });

@@ -21,6 +21,15 @@ html, body{
 body{
 	font-size: 14px;
 }
+/*UTILITIES*/
+$prefijo: fz !default;
+	@for $i from 8 through 40 {
+  .#{$prefijo}-#{$i} {
+    font-size: 0px + $i !important;
+    font-size: rem(0px + $i)!important;
+  }
+}
+
 .container{
 	margin: 0;
 	padding: 0;
@@ -236,6 +245,10 @@ body{
 	background-position: center;
 	.texto{
 		padding: 5% 10%;
+		h3 {
+			font-weight: 600;
+    	letter-spacing: 2.5px;
+		}
 		p{
 			line-height: 1.8;
 			letter-spacing: 0.5px;
@@ -270,22 +283,24 @@ body{
 				padding: 2%; 
 				.imagen{
 					position: relative;
+					cursor: pointer;
 					img{
 						width: 100%;
 						box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.2);
 					}
 					.overlay{
 						width: 100%;
-  						height: 100%;
-  						top: 0;
-  						left: 0;
- 						background-color:transparent;
-  						position: absolute;
-  						transition:all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  					height: 100%;
+						top: 0; 
+						left: 0;
+						position: absolute;
+						@include transition (all .27s ease-in-out);
 					}
-					.overlay.active{
-  						background-color:rgba(238, 238, 238, 0.97);
-  						}
+					.overlay:hover{
+  					background-color: black;
+ 						opacity: 0.9;
+ 						@include transition (all .27s ease-in-out);
+  				}
 				}
 			}
 		}
