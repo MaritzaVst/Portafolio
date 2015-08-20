@@ -29,3 +29,8 @@ $(document).on('click', 'a.smooth', function(e) {
 //     $(this).find(".overlay").addClass('active');
 //     $(this).find(".overlay").toggleClass("active");
 // });
+
+/*MENÚ HIDEEN*/
+$(".switch").click(function(){
+    $(".menu").toggleClass("opacity");
+});

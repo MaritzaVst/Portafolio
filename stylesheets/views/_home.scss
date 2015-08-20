@@ -28,6 +28,9 @@ $prefijo: fz !default;
     font-size: 0px + $i !important;
   }
 }
+.opacity {
+	opacity: 0;
+}
 
 .container{
 	margin: 0;
@@ -76,7 +79,8 @@ $prefijo: fz !default;
 		  	right: 5%;
   			top: 65%;
 		  	margin: -15px 0px 0px -15px;
-		 	cursor: pointer;
+		 		cursor: pointer;
+		 		z-index: 10;
 		}
 		.switch.on:after {
 		  	transform: rotate(-45deg) translate(7px, -8px);
@@ -108,7 +112,7 @@ $prefijo: fz !default;
 			min-width: 30%;
 			position: relative;
 			top: 35px;
-			visibility: hidden;
+			@include transition (all 0.3s ease-in-out);
 			a{
 				text-decoration: none;
 				padding: 4% 4% 2%;
@@ -197,6 +201,12 @@ $prefijo: fz !default;
   			border-radius: 5px;
  	 		outline: 0;
 	  		@include transition(background, .1s, ease-in-out);
+	  		a {
+	  			text-decoration: none;
+	  			color: white;
+	  			width: 100%;
+	  			height: 100%;
+	  		}
 	  		&:hover{
 				background-color: #926d7e;
 	  		}
@@ -281,6 +291,8 @@ $prefijo: fz !default;
 		.row{
 			padding-top: 5%; 
 			list-style: none;
+			padding-left: 6%;
+    	padding-right: 6%;
 			li.col-md-6{
 				padding: 2%; 
 				.imagen{

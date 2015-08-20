@@ -5743,6 +5743,9 @@ body {
 .fz-40 {
   font-size: 40px !important; }
 
+.opacity {
+  opacity: 0; }
+
 .container {
   margin: 0;
   padding: 0;
@@ -5789,7 +5792,8 @@ body {
       right: 5%;
       top: 65%;
       margin: -15px 0px 0px -15px;
-      cursor: pointer; }
+      cursor: pointer;
+      z-index: 10; }
     #scroll .conteiner-menu .switch.on:after {
       transform: rotate(-45deg) translate(7px, -8px); }
     #scroll .conteiner-menu .switch.on:before {
@@ -5819,7 +5823,9 @@ body {
       min-width: 30%;
       position: relative;
       top: 35px;
-      visibility: hidden; }
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
       #scroll .conteiner-menu nav.menu a {
         text-decoration: none;
         padding: 4% 4% 2%;
@@ -5893,6 +5899,11 @@ body {
       -webkit-transition: background, 0.1s, ease-in-out;
       -o-transition: background, 0.1s, ease-in-out;
       transition: background, 0.1s, ease-in-out; }
+      #view-principal .texto .ingreso a {
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        height: 100%; }
       #view-principal .texto .ingreso:hover {
         background-color: #926d7e; }
 
@@ -5958,7 +5969,9 @@ body {
       padding: 0 10%; }
     #portafolio .grid .row {
       padding-top: 5%;
-      list-style: none; }
+      list-style: none;
+      padding-left: 6%;
+      padding-right: 6%; }
       #portafolio .grid .row li.col-md-6 {
         padding: 2%; }
         #portafolio .grid .row li.col-md-6 .imagen {
