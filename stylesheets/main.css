@@ -6060,6 +6060,40 @@ footer {
     display: table-cell;
     vertical-align: middle; }
 
+@media screen and (max-width: 480px) {
+  #view-principal h1 {
+    font-size: 35px !important;
+    line-height: 1.3;
+    letter-spacing: 15px !important;
+    margin-top: 0px; }
+  #view-principal p {
+    font-size: 18px !important; }
+  #view-principal .ingreso {
+    padding: 15px !important;
+    background-color: #926D7E !important;
+    margin-top: 30px; }
+
+  #sobre-mi {
+    padding: 15% 12% 15% !important; }
+    #sobre-mi .frase {
+      padding-top: 15px; }
+    #sobre-mi .texto {
+      padding-top: 25px;
+      font-size: 17px; }
+
+  #habilidades {
+    height: 100% !important; }
+    #habilidades .texto {
+      padding: 15% 12% 10% !important; }
+    #habilidades .img-computer {
+      margin-top: 0px !important; }
+      #habilidades .img-computer img {
+        width: 88% !important; }
+
+  #portafolio {
+    padding: 15% 12% 15% !important; }
+    #portafolio .grid p {
+      padding: 0px !important; } }
 section.portafolio {
   position: relative;
   top: 150px; }
