@@ -5,9 +5,7 @@
 	<title>Maritza Vst</title>
 	<link rel="stylesheet" href="stylesheets/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
-	<link rel="stylesheet" href="owl-carousel/owl.transitions.css"> -->
+	
 </head>
 <body>
 	<div class="container">
@@ -39,7 +37,7 @@
 			</div>
 			<div class="overlay"></div>
 		</section>
-		<section id="sobre-mi" class="clearfix">
+		<section id="sobre-mi" class="fullrow clearfix">
 			<div id="button-fixed"></div>
 			<h3 class="mg-0">ACERCA DE MÍ</h3>
 			<div class="parrafo clearfix">
@@ -48,16 +46,11 @@
 					<p class="autor">- BENJAMIN FRANKLIN</p>
 				</div>
 				<div class="texto col-md-8">
-					<div class="col-md-6">
-						<p>Considero que cada detalle es importante. Por ello mi objetivo es la perfección de cada página web que realice y el ofrecer ideas bien pensadas que se traduscan en diseños eficientes.</p>
-					</div>
-					<div class="col-md-6">
-						<p>Valores como la perseverancia y la constancia son las claves de mi desarrollo. Asímismo, el deseo constante de aprender y superarme, pues sé que mientras haya un deseo habrá un camino.</p>
-					</div>
+						<p>Frontend Developer  y Comunicadora Social con experiencia en múltiples proyectos. Me apasiona todo aquello que rete y desafíe mis conocimientos, pues considero que es una forma de motivación para seguir aprendiendo. Asimismo, creo firmemente en que todo se puede lograr siempre y cuando exista disciplina, constancia y perseverancia. Amo los detalles, pero sobretodo dar al 100% en cada proyecto que ejecuto.</p>
 				</div>
 			</div>
 		</section>
-		<section id="habilidades">
+		<section id="habilidades" class="fullrow">
 			<div class="col-md-6 col-xs-12 texto text-white">
 				<h3 class="mg-0">HABILIDADES</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fugit ab iusto doloribus atque, nostrum ullam velit, porro distinctio architecto suscipit, autem in voluptatibus assumenda odio omnis molestiae, ipsa saepe.</p>
@@ -66,7 +59,7 @@
 				<img src="img/computer3.png" alt="">
 			</div>
 		</section>
-		<section id="portafolio">
+		<section id="portafolio" class="fullrow">
 			<h3 class="mg-0 text-center">PORTAFOLIO</h3>
 			<div class="grid">
 				<p class="text-center hidden-xs hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas magnam delectus ducimus mollitia, dolorem dolor minima consequuntur fuga amet temporibus veritatis consequatur a obcaecati distinctio recusandae cumque ad autem hic.</p>
@@ -74,40 +67,40 @@
 				<ul class="row clearfix pd-0">
 					<li class="col-md-6">
 						<div class="imagen">
-							<img src="img/capturadashy.png" alt="">
+							<img src="img/mundoliderman.png" alt="mundoliderman">
 							<a href="https://github.com/MaritzaVst?tab=repositories" class="overlay text-center">
 								<div class="marco">
-									<h4 class="titulo-proyecto fz-26">DASHBOARD</h4>
+									<h4 class="titulo-proyecto fz-26">MUNDOLIDERMAN</h4>
 								</div>
 							</a>
 						</div>
 					</li>
 					<li class="col-md-6">
 						<div class="imagen">
-							<img src="img/capturafarolito.png" alt="">
+							<img src="img/laboratoria.png" alt="">
 							<a href="https://github.com/MaritzaVst/Reto-Farolito" class="overlay text-center">
 								<div class="marco">
-									<h4 class="titulo-proyecto fz-26">FAROLITO</h4>
+									<h4 class="titulo-proyecto fz-26">LABORATORIA</h4>
 								</div>
 							</a>
 						</div>
 					</li>
 					<li class="col-md-6">
 						<div class="imagen">
-							<img src="img/capturaolas.png" alt="">
+							<img src="img/tuimo.png" alt="">
 							<a href="" class="overlay text-center">
 								<div class="marco">
-									<h4 class="titulo-proyecto fz-26">OLAS SURF</h4>
+									<h4 class="titulo-proyecto fz-26">TUIMO</h4>
 								</div>
 							</a>
 						</div>
 					</li>
 					<li class="col-md-6">
 						<div class="imagen">
-							<img src="img/danza-2.png" alt="">
+							<img src="img/escuela-de-danza.png" alt="">
 							<a href="http://maritzavst.github.io/Danza/" class="overlay text-center">
 								<div class="marco">
-									<h4 class="titulo-proyecto fz-26">PROYECTO DE DANZA</h4>
+									<h4 class="titulo-proyecto fz-26">ESCUELA DE DANZA</h4>
 								</div>
 							</a>
 						</div>
@@ -142,5 +135,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script src="js/scroll.js"></script>
-
+	<script src="js/jquery.smoove.min.js"></script>
+	<script>
+		$('.fullrow').smoove({
+			offset:'30%',
+			moveY:'100px',
+		});
+	</script>
 </html>

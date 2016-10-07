@@ -190,8 +190,8 @@ $prefijo: fz !default;
 	  		padding-bottom: 8%;
 	  	}
 	  	.ingreso{
-			position: absolute;
-			font-size: 17px;
+				position: absolute;
+				font-size: 17px;
 		  	background-color: transparent;
 		  	color: white;
 		  	border: 1px solid #926d7e;
@@ -199,7 +199,7 @@ $prefijo: fz !default;
 	  		width: 180px;
 	  		margin-left: -90px;
   			border-radius: 5px;
- 	 		outline: 0;
+ 	 			outline: 0;
 	  		@include transition(background, .1s, ease-in-out);
 	  		a {
 	  			text-decoration: none;
@@ -208,7 +208,7 @@ $prefijo: fz !default;
 	  			height: 100%;
 	  		}
 	  		&:hover{
-				background-color: #926d7e;
+					background-color: #926d7e;
 	  		}
 		}
 	}
@@ -243,9 +243,12 @@ $prefijo: fz !default;
 		.texto{
 			padding-left: 5%;
 			padding-right: 0;
-			.col-md-6{
+			p {
 				line-height: 1.8;
 				letter-spacing: 0.5px;
+				-webkit-column-count: 2;
+		    -moz-column-count: 2;
+		    column-count: 2;
 			}
 		}
 	}
