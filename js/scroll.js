@@ -3,16 +3,17 @@ $(document).scroll(function() {
     var scroll = $(this).scrollTop();
 
     if (scroll >= 350) {
-        $("#scroll").addClass("active");
+        $("#header").addClass("active-fixed");
     } else {
-        $("#scroll").removeClass("active");
+        $("#header").removeClass("active-fixed");
     }
 
 });
 
-/*Menú Toggle*/
+/*Menú Toggle and hidden*/
 $(".switch").click(function() {
-  $(this).toggleClass("on");
+  $(this).toggleClass("on");+
+  $(".menu").toggleClass("opacity");
 });
 
 /*Scroll top*/
@@ -30,7 +31,3 @@ $(document).on('click', 'a.smooth', function(e) {
 //     $(this).find(".overlay").toggleClass("active");
 // });
 
-/*MENÚ HIDEEN*/
-$(".switch").click(function(){
-    $(".menu").toggleClass("opacity");
-});
