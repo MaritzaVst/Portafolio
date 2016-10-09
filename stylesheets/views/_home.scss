@@ -260,6 +260,7 @@ $prefijo: fz !default;
 	height: 320px;
 	background-image: url(../img/banner4.jpg);
 	background-position: center;
+	background-attachment: fixed;
 	.texto{
 		padding: 5% 10%;
 		h3 {
@@ -299,7 +300,7 @@ $prefijo: fz !default;
 			padding-left: 6%;
     	padding-right: 6%;
 			li.col-md-6{
-				padding: 2%; 
+				padding-bottom: 60px; 
 				.imagen{
 					position: relative;
 					cursor: pointer;
