@@ -5632,13 +5632,14 @@ button.close {
   font-family: OpenSans-Bold;
   src: url(../fonts/Open/OpenSans-Bold.ttf); }
 * {
-  font-family: "OpenSans-Light"; }
+  font-family: "OpenSans-Light";
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 html, body {
   height: 100%; }
-
-* {
-  margin: 0; }
 
 body {
   font-size: 14px; }
@@ -5841,7 +5842,7 @@ body {
   z-index: 102; }
   #header.active-fixed .conteiner-menu .logo {
     color: black;
-    top: 40%; }
+    top: 37%; }
   #header.active-fixed .conteiner-menu .photo {
     top: 7.5px; }
   #header.active-fixed .switch {
@@ -5876,7 +5877,7 @@ body {
     text-align: center;
     padding: 0 15%;
     z-index: 100; }
-    #view-principal .texto h1 {
+    #view-principal .texto h1 span {
       font-size: 54px;
       font-family: "OpenSans-Bold";
       letter-spacing: 20px; }
@@ -6068,7 +6069,7 @@ footer {
     vertical-align: middle; }
 
 @media screen and (max-width: 480px) {
-  #view-principal h1 {
+  #view-principal h1 span {
     font-size: 35px !important;
     line-height: 1.3;
     letter-spacing: 15px !important;

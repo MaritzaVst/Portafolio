@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Maritza Vst | Desarrolladora Web Frontend</title>
-		<link rel="stylesheet" href="stylesheets/main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="stylesheets/main.css">
+		<link rel="stylesheet" href="stylesheets/animate.css">
+		<link rel="stylesheet" href="stylesheets/style.css">
 	</head>
 	<body>
 		<div class="container">
@@ -30,7 +32,7 @@
 			</header>
 			<section id="view-principal" class="text-center">
 				<div class="texto text-center">
-					<h1>MARITZA VST</h1>
+					<h1 class="tlt" data-in-effect="bounceIn">MARITZA VST</h1>
 					<p>Desarrolladora web & Comunicadora Organizacional</p>
 					<button class="ingreso"><a class="smooth" href="#contacto">CONTÁCTAME</a></button>
 				</div>
@@ -134,9 +136,18 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="js/jquery.fittext.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+		<script src="js/jquery.textillate.js"></script>
 		<script src="js/jquery.smoove.min.js"></script>
 		<script src="js/smoove-control.js"></script>
 		<script src="js/scroll.js"></script>
 		<script src="js/height-control.js"></script>
+
+		<script>
+			$(function () {
+			  $('.tlt').textillate({ in: { effect: 'bounceIn' } });
+			})
+		</script>
 	</body>
 </html>
