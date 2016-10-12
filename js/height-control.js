@@ -6,7 +6,7 @@ $(document).ready(function(){
 		var heightImage = $(this).find("img").height();
 		if(heightImage > maxHeight){
 			maxHeight = heightImage;
+			image.height(maxHeight);
 		}
 	});
-	image.height(maxHeight);
 });
