@@ -8,5 +8,6 @@ $(document).ready(function(){
 			maxHeight = heightImage;
 			image.height(maxHeight);
 		}
+		console.log(heightImage);
 	});
 });
