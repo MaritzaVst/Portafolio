@@ -3,14 +3,14 @@ $(document).ready(function(){
 		offset:'30%',
 		moveY:'100px',
 	});
-	$('.proyecto:nth-child(2n-1)').smoove({
+	$('.proyecto').smoove({
 		offset:'30%',
-		moveX: '-100px',
 		moveY: '100px',
 	});
+	$('.proyecto:nth-child(2n-1)').smoove({
+		moveX: '-100px',
+	});
 	$('.proyecto:nth-child(2n)').smoove({
-		offset:'30%',
 		moveX: '100px',
-		moveY: '100px',
 	});
 });

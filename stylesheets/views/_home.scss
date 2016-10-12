@@ -31,6 +31,11 @@ $prefijo: fz !default;
     font-size: 0px + $i !important;
   }
 }
+#progressBarContainer {
+  margin: 20px;
+  width: 400px;
+  height: 8px;
+}
 .opacity {
 	opacity: 0;
 }
