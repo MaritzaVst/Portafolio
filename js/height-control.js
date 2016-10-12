@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).on("load", function(){
 	var maxHeight=0;
 	"use strict"
 	var image = $(".proyecto").find("img");
@@ -6,8 +6,8 @@ $(document).ready(function(){
 		var heightImage = $(this).find("img").height();
 		if(heightImage > maxHeight){
 			maxHeight = heightImage;
-			image.height(maxHeight);
 		}
+		image.height(maxHeight);
 		console.log(heightImage);
-	});
+	},false);
 });
