@@ -5744,6 +5744,11 @@ body {
 .fz-40 {
   font-size: 40px !important; }
 
+#progressBarContainer {
+  margin: 20px;
+  width: 400px;
+  height: 8px; }
+
 .opacity {
   opacity: 0; }
 
@@ -6020,7 +6025,7 @@ body {
 
 #contacto {
   width: 100%;
-  background-image: url(../img/banner3.jpg);
+  background-image: url(../img/banner-contacto.jpg);
   background-size: cover;
   background-position: center 175px;
   position: relative;
