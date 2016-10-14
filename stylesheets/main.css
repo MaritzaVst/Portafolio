@@ -5966,7 +5966,8 @@ body {
 
 #portafolio {
   padding: 10% 10% 15%;
-  color: #777; }
+  color: #777;
+  overflow: hidden; }
   #portafolio h3 {
     font-family: "OpenSans-Regular";
     letter-spacing: 2px; }
