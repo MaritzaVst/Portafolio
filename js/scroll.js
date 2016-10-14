@@ -12,10 +12,15 @@ $(document).scroll(function() {
 
 /*Menú Toggle and hidden*/
 $(".switch").click(function() {
-  $(this).toggleClass("on");+
+  $(".switch").toggleClass("on");
   $(".menu").toggleClass("opacity");
+  $("#menu-movil").toggleClass("active");
 });
 
+$("#menu-movil").find("a").click(function(){
+  $("#menu-movil").removeClass("active");
+  $(".switch").toggleClass("on");
+});
 /*Scroll top*/
 $(document).on('click', 'a.smooth', function(e) {
 	e.preventDefault();

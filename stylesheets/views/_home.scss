@@ -80,41 +80,6 @@ $prefijo: fz !default;
 				background-size: cover;
 			}
 		}
-		.switch {
-		  	width: 30px;
-		  	height: 23px;
-		  	position: absolute;
-		  	right: 5%;
-  			top: 65%;
-		  	margin: -15px 0px 0px -15px;
-		 		cursor: pointer;
-		 		z-index: 10;
-		}
-		.switch.on:after {
-		  	transform: rotate(-45deg) translate(7px, -8px);
-		}
-		.switch.on:before {
-		  	transform: rotate(45deg) translate(5px, 5px);
-		}
-		.switch .menu-toggle {
-		  	width: 100%;
-		  	height: 5px;
-		  	background: #fff;
-		  	margin: 4px auto;
-		  	@include transition (all 0.3s);
-		  	backface-visibility: hidden;
-		}
-		.switch.on .menu-toggle {
-		  	opacity: 0;
-		}
-		.switch:before, .switch:after {
-		  	content: "";
-		  	display: block;
-		  	height: 5px;
-		  	background: #fff;
-		  	@include transition (all 0.3s);
-		  	backface-visibility: hidden;
-		}
 		nav.menu{
 			float: right;
 			min-width: 30%;
@@ -160,6 +125,71 @@ $prefijo: fz !default;
 		a{
 			color: black;
 		}
+	}
+}
+.switch {
+	width: 30px;
+	height: 23px;
+	position: absolute;
+	right: 5%;
+	top: 65%;
+	margin: -15px 0px 0px -15px;
+	cursor: pointer;
+	z-index: 10;
+ 	&.on:after {
+  	transform: rotate(-45deg) translate(7px, -8px);
+	}
+	&.on:before {
+	  transform: rotate(45deg) translate(5px, 5px);
+	}
+}
+.switch .menu-toggle {
+  	width: 100%;
+  	height: 5px;
+  	background: #fff;
+  	margin: 4px auto;
+  	@include transition (all 0.3s);
+  	backface-visibility: hidden;
+}
+.switch.on .menu-toggle {
+  	opacity: 0;
+}
+.switch:before, .switch:after {
+	content: "";
+	display: block;
+	height: 5px;
+	background: #fff;
+	@include transition (all 0.3s);
+	backface-visibility: hidden;
+}
+#menu-movil {
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	@include transition(all .25s ease-in-out);
+	transform: translateX(-100%);
+	&.active {
+		transform: translateX(0%);
+	}
+	.switch {
+		top: 7%;
+	}
+	nav {
+		position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    a {
+    	display: block;
+	    color: white;
+	    font-size: 20px;
+	    padding-bottom: 40px;
+	    text-align: center;
+    }
 	}
 }
 #view-principal{
@@ -413,7 +443,11 @@ footer{
 }
 
 @media screen and (max-width: #{$screen-phone}) {
-
+	#header {
+		nav {
+			display: none;
+		}
+	}
 	#view-principal {
 		.texto {
 			top: 25%;
