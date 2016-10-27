@@ -5987,10 +5987,11 @@ body {
     #habilidades .texto h3 {
       font-weight: 600;
       letter-spacing: 2.5px; }
-    #habilidades .texto p {
-      line-height: 1.8;
-      letter-spacing: 0.5px;
-      padding-top: 10%; }
+    #habilidades .texto ul {
+      margin-top: 21px;
+      letter-spacing: 0.5px; }
+      #habilidades .texto ul li {
+        padding-bottom: 7px; }
   #habilidades .img-computer {
     margin-top: -70px; }
     #habilidades .img-computer img {

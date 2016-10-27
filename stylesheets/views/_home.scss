@@ -302,10 +302,12 @@ $prefijo: fz !default;
 			font-weight: 600;
     	letter-spacing: 2.5px;
 		}
-		p{
-			line-height: 1.8;
+		ul {
+			margin-top: 21px;
 			letter-spacing: 0.5px;
-			padding-top: 10%;
+			li {
+				padding-bottom: 7px;
+			}
 		}
 	}
 	.img-computer{
